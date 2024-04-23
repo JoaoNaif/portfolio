@@ -8,7 +8,9 @@ import { Contact } from "./components/Contact";
 const App = () => {
   const theme = useAppSelector((state) => state.theme);
 
-  const handleChange = (newCheckedState: boolean) => {};
+  const handleChange = (newCheckedState: boolean) => {
+    console.log(newCheckedState);
+  };
   return (
     <div
       className={`min-h-screen transition-all duration-200 ease-in  ${
